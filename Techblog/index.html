@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechBlog</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+
+  <a class="nav-logo" href="#"><span>&lt;</span>TechBlog<span>/&gt;</span></a>
+
+  <button class="nav-toggle" id="navToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Articles</a></li>
+    <li><a href="#">Tutorials</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#" class="nav-cta">Subscribe</a></li>
+  </ul>
+
+</nav>
+
+
+<!-- Hero -->
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-badge">Media Queries Demo</div>
+
+    <h1>Responsive Design<br><em>Made Simple</em></h1>
+
+    <p>
+      Learn how CSS media queries make websites work
+      on all screen sizes.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary">Read Articles</button>
+      <button class="btn btn-secondary">View Source</button>
+    </div>
+
+  </div>
+
+
+  <div class="hero-visual">
+
+    <div class="code-window">
+
+      <div class="code-titlebar">
+        <span class="dot dot-r"></span>
+        <span class="dot dot-y"></span>
+        <span class="dot dot-g"></span>
+      </div>
+
+      <div class="code-body">
+        <div class="cm">/* Mobile Styles */</div>
+        <div>
+          <span class="hl">@media</span>
+          (<span class="at">max-width</span>:
+          <span class="val">768px</span>)
+        </div>
+        <div>{</div>
+        <div>&nbsp;&nbsp;.layout { padding:20px; }</div>
+        <div>&nbsp;&nbsp;img { max-width:100%; }</div>
+        <div>}</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Stats -->
+<section class="stats-bar">
+
+  <div class="stat">
+    <span class="stat-number">12K+</span>
+    <span class="stat-label">Readers</span>
+  </div>
+
+  <div class="stat">
+    <span class="stat-number">340+</span>
+    <span class="stat-label">Articles</span>
+  </div>
+
+  <div class="stat">
+    <span class="stat-number">98%</span>
+    <span class="stat-label">Mobile</span>
+  </div>
+
+  <div class="stat">
+    <span class="stat-number">4.9★</span>
+    <span class="stat-label">Rating</span>
+  </div>
+
+</section>
+
+
+<!-- Content -->
+<div class="content-wrapper">
+
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+
+    <h3>Search</h3>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button>Go</button>
+    </div>
+
+  </div>
+
+</aside>
+
+
+<!-- Articles -->
+<main class="articles">
+
+  <article class="article-card">
+
+    <div class="card-image purple">
+      📱
+    </div>
+
+    <div class="card-body">
+
+      <h2 class="card-title">
+        CSS Media Queries
+      </h2>
+
+      <p class="card-excerpt">
+        Learn responsive design from basics
+        to advanced techniques.
+      </p>
+
+      <div class="card-footer">
+
+        <div class="author">
+          <div class="avatar purple">A</div>
+          <span>Alex</span>
+        </div>
+
+        <span>8 min</span>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</main>
+
+</div>
+
+
+<!-- Newsletter -->
+<section class="newsletter">
+
+  <h2>Subscribe</h2>
+
+  <p>Get latest updates</p>
+
+  <div class="newsletter-form">
+
+    <input type="email" placeholder="email@example.com">
+
+    <button>Subscribe</button>
+
+  </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+  <div class="footer-bottom">
+
+    <span>© 2026 TechBlog</span>
+
+    <span>CSS Media Queries</span>
+
+  </div>
+
+</footer>
+
+
+<!-- JS -->
+<script>
+
+const toggle = document.getElementById("navToggle");
+const nav = document.getElementById("navLinks");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("is-open");
+});
+
+</script>
+
+</body>
+</html>
